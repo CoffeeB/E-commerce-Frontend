@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Ecommerece : Add Product</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/signup.css" rel="stylesheet">
+        <link href="css/addProd.css" rel="stylesheet">
+    </head>
+    <body>
+        
+        <img src="img/loader.gif" class="loader" alt="">
+
+        <div class="alert-box">
+            <img src="img/error.png" class="alert-img" alt="">
+            <p class="alert-msg"></p>
+        </div>
+
+        <img src="img/logo.png" class="logo" alt="">
+        <a href="/" class="back">back to home</a>
+
+        <div class="form">
+            <div class="field">                    
+                <input type="text" class="input" maxlength="50" autocomplete="off" placeholder="Product Name" id="product-name">
+                <label for="product-name" class="label">|<br>product name</label>
+            </div>
+            <div class="field">                    
+                <input type="text" maxlength="100" class="input" autocomplete="off" placeholder="product snippet" id="short-des">
+                <label for="short-des" class="label">|<br>product snippet</label>
+            </div>
+            <div class="field">                    
+                <textarea placeholder="product description" class="input" id="des"></textarea>
+                <label for="des" class="label">|<br>product description</label>
+            </div>
+
+            <!-- product image -->
+            <div class="product-info">
+                <div class="product-image"><img src="img/photo.png"></div>
+                <div class="upload-image-sec">
+                    <!-- uploaded images -->
+                    <p class="text"><img src="img/camera.png" alt="">upload image</p>
+                    <div class="upload-catalogue">
+                        <input type="file" class="fileupload" id="first-file-btn" hidden>
+                        <label for="first-file-btn" class="upload-image"></label>
+                        <input type="file" class="fileupload" id="second-file-btn" hidden>
+                        <label for="second-file-btn" class="upload-image"></label>
+                        <input type="file" class="fileupload" id="third-file-btn" hidden>
+                        <label for="third-file-btn" class="upload-image"></label>
+                        <input type="file" class="fileupload" id="fourth-file-btn" hidden>
+                        <label for="fourth-file-btn" class="upload-image"></label>
+                    </div>
+                </div>
+                <div class="select-sizes">
+                    <!-- available sizes -->
+                    <p class="text">size available</p>
+                    <div class="sizes">
+                        <input type="checkbox" class="size-checkbox" id="xs" value="xs">
+                        <input type="checkbox" class="size-checkbox" id="s" value="s">
+                        <input type="checkbox" class="size-checkbox" id="m" value="m">
+                        <input type="checkbox" class="size-checkbox" id="l" value="l">
+                        <input type="checkbox" class="size-checkbox" id="xl" value="xl">
+                        <input type="checkbox" class="size-checkbox" id="xxl" value="xxl">
+                        <input type="checkbox" class="size-checkbox" id="xxxl" value="xxxl">
+                    </div>
+                </div>
+            </div>
+
+            <!-- product price -->
+            <div class="product-price">
+                <div class="field">                    
+                    <input type="number" class="input" autocomplete="off" placeholder="actual price" id="actual-price">
+                    <label for="actual-price" class="label">|<br>actual price</label>
+                </div>
+                <div class="field">                    
+                    <input type="number" class="input" autocomplete="off" placeholder="discount percentage" id="discount">
+                    <label for="discount" class="label">|<br>discount percentage</label>
+                </div>
+                <div class="field">                    
+                    <input type="number" class="input" autocomplete="off" placeholder="selling price" id="sell-price">
+                    <label for="sell-price" class="label">|<br>selling price</label>
+                </div>
+            </div>
+
+            <!-- stock -->
+            <div class="field">                    
+                <input type="number" class="input" id="stock" min="20" placeholder="item in stocks (minimum of 20)">
+                <label for="stock" class="label">|<br>amount in stock</label>
+            </div>
+            <div class="field">                    
+                <p class="text">Category selection</p>
+            </div>
+            <div class="field">                    
+                <textarea id="tags" class="input" placeholder="Enter categories here, for example - Clothes, Men, Jeans, Blue Jeans, Rough Jeans(you should add men or women at starting)"></textarea>
+                <label for="des" class="label">|<br>product description</label>
+            </div>
+            <div class="checker">                    
+                <div class="checking">
+                    <input type="checkbox" checked class="checkbox" id="tnc">
+                    <label for="tnc" class="tnc">ecommerce would take 20% from your sale</label>
+                </div>
+            </div>
+            <div class="buttons">
+                <button type="submit" class="btn" id="add-btn">add product</button>
+                <button type="submit" class="btn" id="draft-btn">save draft</button>
+            </div>
+        </div>
+        
+        <script src="js/token.js"></script>
+        <script src="js/addProd.js"></script>
+
+    </body>
+</html>
