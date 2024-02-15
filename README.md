@@ -1,5 +1,4 @@
-# E-commerce-Frontend
-Intermediate frontend web-developer,
-My frontend projects majorly based on ecommerce.
-learning blockchain, web3 and AI.
-New Account
+Ecommerce Fullstack Website
+Node, express and firebase were used for the backend
+Traditional Html, css and js for the frontend
+Pure Js for Backend
